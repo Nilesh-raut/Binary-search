@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int n)
+long long int binarySearch(int n)
 {
 
-    int s = 0, e = n, mid;
-    int ans = -1;
+    int s = 0, e = n;
+    long long mid;
+    long long ans = -1;
 
     while (s <= e)
     {
-        mid = (s + e) / 2;
+         mid = (s + e) / 2;
 
-        int square = mid * mid;
+        long long int square = mid * mid;
 
         if (square > n)
         {
