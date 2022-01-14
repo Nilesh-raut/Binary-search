@@ -6,7 +6,7 @@ int binarySearch(int n)
 
     int s = 0, e = n, mid;
     int ans = -1;
-    mid = s + e / 2;
+
     while (s <= e)
     {
         mid = (s + e) / 2;

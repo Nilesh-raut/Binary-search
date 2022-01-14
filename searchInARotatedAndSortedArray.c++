@@ -67,8 +67,8 @@ int main()
 
     int array[5] = {7, 9, 1, 2, 3};
 
-    int key = 1;
-    cout << searchInArray(array, 5, key);
+    int key = 3;
+    cout << "The index num of "<<key<< " is "<< searchInArray(array, 5, key);
 
     return 0;
 }
