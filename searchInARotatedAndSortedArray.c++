@@ -1,5 +1,5 @@
-// Please help why its not working 
-// Question is search element in rotated array
+// Please help why its not working.
+// Question is search element in rotated array.
 #include <iostream>
 using namespace std;
 
@@ -38,7 +38,7 @@ int binarySearch(int arr[], int key, int start, int end)
         {
             e = mid - 1;
         }
-        else if (key > mid)
+        else if (key >arr[mid])
         {
             s = mid + 1;
         }
@@ -52,13 +52,13 @@ int searchInArray(int array[], int size, int key)
     int getPivote = pivotElement(array, size);
     if (key >= array[getPivote] && key <= array[size-1])
     {
-        cout << "81";
-        return binarySearch(array, key, /*s*/ getPivote, /*e*/ size-1);
+        // cout << "81";
+        return binarySearch(array, key, /*start*/ getPivote, /*end*/ size-1);
     }
     else
     {
-        cout << "08";
-        /* code will write aftre some time*/
+        return binarySearch(array,key,0,getPivote-1);
+
     }
 }
 
@@ -67,7 +67,7 @@ int main()
 
     int array[5] = {7, 9, 1, 2, 3};
 
-    int key = 3;
+    int key = 1;
     cout << searchInArray(array, 5, key);
 
     return 0;
