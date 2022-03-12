@@ -1,3 +1,5 @@
+//agr code na samjhe to notes dekh lena 100% samjh me aa jayega 
+// cow ke bich me se minimum distace find krna hai fir usmese jo maximum ho vo ans hoga
 #include <iostream>
 using namespace std;
 
